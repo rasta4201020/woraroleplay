@@ -1,7 +1,8 @@
 const LINKS = {
-  discord: "https://discord.gg/IDE_JON_A_SAJAT_LINKED",
+  discord: "https://discord.gg/tpVpduEqDm",
   whitelist: "https://example.com/whitelist",
   rules: "https://example.com/szabalyzat",
+  launcher: "https://github.com/rasta4201020/woraroleplay/releases/latest",
 };
 
 function setYear() {

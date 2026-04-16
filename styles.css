@@ -552,6 +552,43 @@ h1 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+/* Download */
+.download {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.download__card {
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(180deg, rgba(124, 92, 255, 0.12), rgba(255, 255, 255, 0.03));
+  box-shadow: var(--shadow);
+}
+
+.download__card h3 {
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.download__meta {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+}
+
+.download__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.download__note {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+
 /* Footer */
 .footer {
   padding: 24px 0 34px;
