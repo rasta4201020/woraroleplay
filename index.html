@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Wora Roleplay — szabályok, csatlakozás, frakciók és hírek."
+      content="WoRa Roleplay — prémium magyar FiveM roleplay közösség. Csatlakozás, frakciók, szabályzat, letöltés."
     />
-    <title>Wora Roleplay</title>
+    <title>WoRa Roleplay</title>
+    <meta name="theme-color" content="#070a12" />
+    <meta property="og:title" content="WoRa Roleplay" />
+    <meta
+      property="og:description"
+      content="Prémium magyar FiveM roleplay. Csatlakozás, frakciók, szabályzat, letöltés."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2325d3ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%23070a12'/%3E%3Cpath d='M14 41 23 18h7l10 23h-7l-1.8-4.6H22.8L21 41h-7Zm11-10h5.2L27.6 24 25 31Z' fill='url(%23g)'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -21,9 +30,9 @@
 
     <header class="topbar">
       <div class="container topbar__inner">
-        <a class="brand" href="./" aria-label="Wora Roleplay főoldal">
+        <a class="brand" href="./" aria-label="WoRa Roleplay főoldal">
           <span class="brand__dot" aria-hidden="true"></span>
-          <span class="brand__text">Wora Roleplay</span>
+          <span class="brand__text">WoRa Roleplay</span>
         </a>
 
         <button
@@ -39,9 +48,10 @@
         </button>
 
         <nav class="nav" aria-label="Fő navigáció" data-nav>
-          <a href="#csatlakozas">Csatlakozás</a>
-          <a href="#szabalyok">Szabályok</a>
+          <a href="#rolunk">Rólunk</a>
+          <a href="#jellemzok">Jellemzők</a>
           <a href="#frakciok">Frakciók</a>
+          <a href="#galeria">Galéria</a>
           <a href="#letoltes">Letöltés</a>
           <a href="#gyik">GYIK</a>
           <a class="nav__cta" href="#kapcsolat">Kapcsolat</a>
@@ -53,32 +63,39 @@
       <section class="hero">
         <div class="container hero__inner">
           <div class="hero__copy">
-            <p class="pill">Magyar RP közösség</p>
+            <p class="pill">
+              <span class="pill__spark" aria-hidden="true"></span>
+              Prémium magyar FiveM roleplay
+            </p>
             <h1>
-              Wora Roleplay
-              <span class="hero__accent">— tiszta RP, erős közösség.</span>
+              WoRa Roleplay
+              <span class="hero__accent">— AAA+ minőség, tiszta RP, erős közösség.</span>
             </h1>
             <p class="lead">
-              Információk, szabályok, frakciók, jelentkezés és hírek egy helyen.
+              Modern, saját fejlesztésű élmény — frakciók, események, történetszálak és
+              prémium RP flow. Minden információ és letöltés egy helyen.
             </p>
 
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#csatlakozas">Csatlakozás</a>
-              <a class="btn btn--ghost" href="#szabalyok">Szabályok</a>
+              <a class="btn btn--primary" href="#" data-link="discord">Discord</a>
+              <a class="btn btn--ghost" href="#letoltes">Launcher letöltés</a>
+              <button class="btn btn--subtle" type="button" data-copy-connect>
+                Connect parancs másolása
+              </button>
             </div>
 
-            <div class="hero__stats" role="list">
+            <div class="hero__stats" role="list" aria-label="Gyors adatok">
               <div class="stat" role="listitem">
-                <div class="stat__num">24/7</div>
-                <div class="stat__label">szerver</div>
+                <div class="stat__num">Stabil</div>
+                <div class="stat__label">optimizált</div>
               </div>
               <div class="stat" role="listitem">
-                <div class="stat__num">RP</div>
-                <div class="stat__label">fókusz</div>
+                <div class="stat__num">Saját</div>
+                <div class="stat__label">fejlesztés</div>
               </div>
               <div class="stat" role="listitem">
-                <div class="stat__num">Discord</div>
-                <div class="stat__label">közösség</div>
+                <div class="stat__num">Események</div>
+                <div class="stat__label">heti</div>
               </div>
             </div>
           </div>
@@ -86,33 +103,33 @@
           <div class="hero__card" aria-label="Gyors infó kártya">
             <div class="card">
               <div class="card__head">
-                <h2>Gyors indítás</h2>
-                <p>3 lépés, és bent is vagy.</p>
+                <h2>Gyors belépés</h2>
+                <p>Letöltés, Discord, whitelist — és indul a történet.</p>
               </div>
               <ol class="steps">
                 <li>
-                  <span class="steps__title">Discord</span>
-                  <span class="steps__desc">Csatlakozz a közösséghez.</span>
+                  <span class="steps__title">1) Discord</span>
+                  <span class="steps__desc">Bejelentkezés + információk.</span>
                 </li>
                 <li>
-                  <span class="steps__title">Whitelist</span>
-                  <span class="steps__desc">Töltsd ki a jelentkezést.</span>
+                  <span class="steps__title">2) Whitelist</span>
+                  <span class="steps__desc">Jelentkezés, gyors elbírálás.</span>
                 </li>
                 <li>
-                  <span class="steps__title">Indulás</span>
-                  <span class="steps__desc">Karakter, történet, RP.</span>
+                  <span class="steps__title">3) Launcher</span>
+                  <span class="steps__desc">Telepítés, majd csatlakozás.</span>
                 </li>
               </ol>
               <div class="card__actions">
-                <a class="btn btn--primary btn--block" href="#csatlakozas"
-                  >Jelentkezés</a
+                <a class="btn btn--primary btn--block" href="#" data-link="launcher"
+                  >Launcher letöltés</a
                 >
-                <a class="btn btn--subtle btn--block" href="#kapcsolat"
-                  >Linkek beállítása</a
+                <a class="btn btn--ghost btn--block" href="#" data-link="whitelist"
+                  >Whitelist / Jelentkezés</a
                 >
               </div>
               <p class="hint">
-                Tipp: a linkeket lent a “Kapcsolat” részben cseréld ki a sajátodra.
+                Tipp: ha nincs kész whitelist linked, egyelőre a Discord gombot használd.
               </p>
             </div>
           </div>
@@ -125,64 +142,128 @@
         </div>
       </section>
 
-      <section id="csatlakozas" class="section">
+      <section id="rolunk" class="section">
         <div class="container">
           <div class="section__head">
-            <h2>Csatlakozás</h2>
-            <p>Gyorsan áttekinthető folyamat, hogy mindenki ugyanonnan induljon.</p>
+            <h2>Rólunk</h2>
+            <p>
+              A WoRa Roleplay egy magyar FiveM szerver, ahol a történetvezetés, a minőségi
+              közösség és a stabil technikai alap ugyanannyira fontos.
+            </p>
           </div>
 
-          <div class="cards">
-            <article class="mini">
-              <h3>1) Discord</h3>
-              <p>
-                Csatlakozz a szerverünkhöz, olvasd el a csatornákat, és kérdezz bátran.
-              </p>
-            </article>
-            <article class="mini">
-              <h3>2) Whitelist</h3>
-              <p>
-                Add le a jelentkezést. Ha kész, értesítünk, és kapsz további infókat.
-              </p>
-            </article>
-            <article class="mini">
-              <h3>3) RP</h3>
-              <p>
-                Hozd a karaktered történetét, és tartsd a szabályokat — a többi jön
-                magától.
-              </p>
-            </article>
+          <div class="split">
+            <div class="split__left">
+              <div class="featureList">
+                <div class="featureList__item">
+                  <div class="icon" aria-hidden="true">✦</div>
+                  <div>
+                    <div class="featureList__title">AAA+ RP élmény</div>
+                    <div class="featureList__desc">
+                      Szabályos, tiszta játékmenet — a karaktered története kerül előtérbe.
+                    </div>
+                  </div>
+                </div>
+                <div class="featureList__item">
+                  <div class="icon" aria-hidden="true">⚡</div>
+                  <div>
+                    <div class="featureList__title">Stabil technika</div>
+                    <div class="featureList__desc">
+                      Optimalizált erőforrások, következetes fejlesztés, gyors hibaelhárítás.
+                    </div>
+                  </div>
+                </div>
+                <div class="featureList__item">
+                  <div class="icon" aria-hidden="true">◎</div>
+                  <div>
+                    <div class="featureList__title">Közösség & események</div>
+                    <div class="featureList__desc">
+                      Tematikus események, frakció RP és közös történetszálak.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ctaRow">
+                <a class="btn btn--primary" href="#" data-link="discord">Belépés Discordra</a>
+                <a class="btn btn--ghost" href="#" data-link="rules">Szabályzat</a>
+              </div>
+            </div>
+
+            <div class="split__right">
+              <div class="glass">
+                <div class="glass__head">
+                  <h3>Gyors infók</h3>
+                  <p>Állítsd be a saját adataidat a `script.js`-ben.</p>
+                </div>
+                <div class="kv">
+                  <div class="kv__row">
+                    <div class="kv__k">Discord</div>
+                    <div class="kv__v" data-bind="discordHost">discord.gg/…</div>
+                  </div>
+                  <div class="kv__row">
+                    <div class="kv__k">Connect</div>
+                    <div class="kv__v" data-bind="connectCmd">connect …</div>
+                  </div>
+                  <div class="kv__row">
+                    <div class="kv__k">Launcher</div>
+                    <div class="kv__v">GitHub Release (latest)</div>
+                  </div>
+                </div>
+                <div class="glass__actions">
+                  <a class="btn btn--primary btn--block" href="#letoltes">Letöltés</a>
+                  <button class="btn btn--subtle btn--block" type="button" data-copy-connect>
+                    Connect másolása
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="szabalyok" class="section section--alt">
+      <section id="jellemzok" class="section section--alt">
         <div class="container">
           <div class="section__head">
-            <h2>Alap szabályok (röviden)</h2>
+            <h2>Jellemzők</h2>
             <p>
-              Ez egy rövid kivonat. A teljes szabályzatot tedd majd linkre (Discord /
-              Google Docs).
+              Prémium részletek, amik a mindennapi RP-t gördülékennyé teszik.
             </p>
           </div>
 
-          <div class="rules">
-            <div class="rule">
-              <h3>Fair play</h3>
-              <p>Mások játékát nem rontjuk el. Nincs toxic, nincs exploit.</p>
-            </div>
-            <div class="rule">
-              <h3>RP első</h3>
-              <p>A döntéseket a karakter motivációi vezetik, nem az “out-of-game”.</p>
-            </div>
-            <div class="rule">
-              <h3>Kommunikáció</h3>
-              <p>Konfliktusnál először kulturáltan egyeztetünk, utána admin.</p>
-            </div>
-            <div class="rule">
-              <h3>Ésszerűség</h3>
-              <p>Kerüljük a túlzásokat, realisztikus keretek között maradunk.</p>
-            </div>
+          <div class="gridCards">
+            <article class="gridCard" data-reveal>
+              <div class="gridCard__top">
+                <div class="badge">Stabil</div>
+                <div class="gridCard__icon" aria-hidden="true">⚙</div>
+              </div>
+              <h3>Optimalizált élmény</h3>
+              <p>Kevesebb “random bug”, több RP. Folyamatos teljesítményhangolás.</p>
+            </article>
+            <article class="gridCard" data-reveal>
+              <div class="gridCard__top">
+                <div class="badge">Prémium</div>
+                <div class="gridCard__icon" aria-hidden="true">✦</div>
+              </div>
+              <h3>Minőségi szabályrendszer</h3>
+              <p>Átlátható elvek, következetes admin — a fair RP védelem alatt áll.</p>
+            </article>
+            <article class="gridCard" data-reveal>
+              <div class="gridCard__top">
+                <div class="badge">Közösség</div>
+                <div class="gridCard__icon" aria-hidden="true">◎</div>
+              </div>
+              <h3>Események & történet</h3>
+              <p>Heti események, frakció RP, városi történetszálak és karakter-ívek.</p>
+            </article>
+            <article class="gridCard" data-reveal>
+              <div class="gridCard__top">
+                <div class="badge">Gyors</div>
+                <div class="gridCard__icon" aria-hidden="true">⚡</div>
+              </div>
+              <h3>Gyors csatlakozás</h3>
+              <p>Launcher letöltés, whitelist, és mehet a csatlakozás — felesleges körök nélkül.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -222,6 +303,33 @@
                 <li>Szabályismeret: elvárt</li>
               </ul>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Galéria</h2>
+            <p>
+              Tölts fel képeket később — addig itt AAA stílusú “scene” csempék vannak.
+              (Katt: nagyítás)
+            </p>
+          </div>
+
+          <div class="gallery" data-gallery>
+            <button class="shot shot--a" type="button" data-shot="Városi éjszakák">
+              <span>Városi éjszakák</span>
+            </button>
+            <button class="shot shot--b" type="button" data-shot="Frakció műveletek">
+              <span>Frakció műveletek</span>
+            </button>
+            <button class="shot shot--c" type="button" data-shot="Találkozók">
+              <span>Találkozók</span>
+            </button>
+            <button class="shot shot--d" type="button" data-shot="Események">
+              <span>Események</span>
+            </button>
           </div>
         </div>
       </section>
@@ -313,7 +421,8 @@
             <h3>Linkek beállítása</h3>
             <p>
               Nyisd meg a <code>script.js</code>-t, és írd át a <code>LINKS</code>
-              objektumban a Discord / whitelist / szabályzat URL-eket.
+              objektumban a Discord / launcher / whitelist / szabályzat URL-eket, és a
+              <code>SERVER</code> résznél a connect parancsot.
             </p>
           </div>
         </div>
